@@ -10,6 +10,7 @@
 	<link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" href="materialize/css/materialize.min.css">
 	<link rel="stylesheet" href="materialize/css/style.css">
+	
 	<style>
 
 	.navbarinp{
@@ -27,7 +28,7 @@
 		
 		.parallax {
     /* The image used */
-    background-image: url("images/back.jpg");
+    background-image: url("images/back2.jpg");
 
     /* Set a specific height */
     min-height: 700px; 
@@ -53,10 +54,8 @@
 		height:70px;
 	}
 	
-	#skill_name{
-		font-size:25px;
 		
-	}
+	
 	#other_tab{
 		color:#8856A8;
 	}
@@ -114,14 +113,18 @@
 
  
 
-<div id="abc" style="background:transparent;position:fixed;"  class="navbar-fixed">
+<div id="abc" style="background:transparent;position:fixed;z-index:999"  class="navbar-fixed">
  <nav id="navinp" class="navbarinp" >
     <div class="navbar_wrapper">
+    <a href="index.html" class=" hide-on-large-only" style="padding-left:10px;">Home</a>
+    
+     <a href="#" data-activates="mobile-nav" class="button-collapse right hide-on-large-only"><i class="material-icons">menu</i></a>
+    
       <ul class="left hide-on-med-and-down">
-        <li><a href="index.html" class="header_but_size" id="navhome">Home</a></li>
+      		  <li><a href="index.html" class="header_but_size" id="navhome">Home</a></li>
 		 <li><a href="#profile" class="header_but_size" id="navhome">Profile</a></li>
       
-        <li class="active"><a href="collapsible.html"></a></li>
+       		<!--  <li class="active"><a href="collapsible.html"></a></li> 	-->
       </ul>
 	   <ul class="left hide-on-med-and-down right" id="right_nav">
 		 <li><a href="#technical_knowledge" class="header_but_size" id="navhome">Skills</a></li>
@@ -129,6 +132,15 @@
 		 <li><a href="#projects" class="header_but_size" id="navhome">Projects</a></li>
         
       </ul>
+      <ul class="side-nav right" id="mobile-nav">
+         <li><a href="index.html" class="header_but_size" onclick="closeSideNav()" id="navhome">Home</a></li>
+	 <li><a href="#profile" class="header_but_size" onclick="closeSideNav()" id="navhome">Profile</a></li>
+     	 <li><a href="#technical_knowledge" class="header_but_size" onclick="closeSideNav()" id="navhome">Skills</a></li>
+         <li><a href="#internship" class="header_but_size" onclick="closeSideNav()" id="navhome">Internships</a></li>
+		 <li><a href="#projects" class="header_but_size" onclick="closeSideNav()" id="navhome">Projects</a></li>
+      </ul>
+      
+      
     </div>
   </nav>
 
@@ -143,7 +155,7 @@
 		
 	<div class="row" id="contact">
 		
-		<div class="col s12 m4">
+		<div class="col s12 l4 m6">
 			<div class="portfoliocard" >
 		<div class="coverphoto"></div>
 		<div class="profile_picture"></div>
@@ -170,7 +182,7 @@
 		</div>
 
 		</div>
-		<div class="col s12 m6 offset-m1">
+		<div class="col s12 m6 offset-l1">
 		<div id="textcontact" >
 				<p class="center-align">My name is Anuj Yadav</p> 
 				</br>-Web Developer 
@@ -189,15 +201,15 @@
 		<h2 class="heading_defined center">Technical Skills</h2>
 		<div class="row" id="tech_margin">
 		
-			<div class="col s12 m3  border_skill" >
+			<div class="col s12 m4 l3  border_skill" >
 				<div class="col s4 m4 " style="padding:5px 5px 5px 5px;">
 					<img src="images/html.jpg" id="image_round" class=" responsive-img" >
 				</div>
-				<div class="col s6 m6  offset-m1" style="padding-top:20px;">
+				<div class="col s6 m6  offset-l1" style="padding-top:20px;">
 					<span class="" id="skill_name">HTML</span>
 				</div>
 			</div>
-			<div class="col s12 m3 offset-m1 border_skill">
+			<div class="col s12 m4 l3 offset-l1 border_skill">
 				<div class="col s4 m4 " style="padding:5px 5px 5px 5px;">
 					<img src="images/css.jpg" id="image_round" class=" responsive-img" >
 				</div>
@@ -205,7 +217,7 @@
 					<span class="" id="skill_name">CSS</span>
 				</div>
 			</div>
-			<div class="col s12 m3 offset-m1 border_skill">
+			<div class="col s12 m4 l3 offset-l1 border_skill">
 				<div class="col s4 " style="padding:5px 5px 5px 5px;">
 					<img src="images/js.jpg" id="image_round" class=" responsive-img" >
 				</div>
@@ -221,15 +233,15 @@
 		
 		<div class="row" id="tech_margin">
 		
-			<div class="col s12 m3 border_skill">
+			<div class="col s12 m4 l3 border_skill">
 				<div class="col s4 " style="padding:5px 5px 5px 5px;">
 					<img src="images/bootstrap.jpg" id="image_round" class=" responsive-img" >
 				</div>
-				<div class="col s6 offset-m1" style="padding-top:20px;">
+				<div class="col s6 offset-l1" style="padding-top:20px;">
 					<span class="" id="skill_name">Bootstrap</span>
 				</div>
 			</div>
-			<div class="col s12 m3 offset-m1 border_skill">
+			<div class="col s12 m4 l3 offset-l1 border_skill">
 				<div class="col s4 " style="padding:5px 5px 5px 5px;">
 					<img src="images/materialize.jpg" id="image_round" class=" responsive-img" >
 				</div>
@@ -237,7 +249,7 @@
 					<span class="" id="skill_name">Materialize</span>
 				</div>
 			</div>
-			<div class="col s12 m3 offset-m1 border_skill">
+			<div class="col s12 m4 l3 offset-l1 border_skill">
 				<div class="col s4 " style="padding:5px 5px 5px 5px;">
 					<img src="images/angularjs.jpg" id="image_round" class=" responsive-img" >
 				</div>
@@ -254,27 +266,27 @@
 		
 		<div class="row" id="tech_margin">
 		
-			<div class="col s12 m3 border_skill">
+			<div class="col s12 m4 l3 border_skill">
 				<div class="col s4 " style="padding:5px 5px 5px 5px;">
 					<img src="images/ajaxc.jpg" id="image_round" class=" responsive-img" >
 				</div>
-				<div class="col s6 offset-m1" style="padding-top:20px;">
+				<div class="col s6 offset-l1" style="padding-top:20px;">
 					<span class="" id="skill_name">AJAX</span>
 				</div>
 			</div>
-			<div class="col s12 m3 offset-m1 border_skill">
+			<div class="col s12 m4 l3 offset-l1 border_skill">
 				<div class="col s4 " style="padding:5px 5px 5px 5px;">
 					<img src="images/jquery.jpg" id="image_round" class=" responsive-img" >
 				</div>
-				<div class="col s6 offset-m1" style="padding-top:20px;">
+				<div class="col s6 offset-l1" style="padding-top:20px;">
 					<span class="" id="skill_name">JQuery</span>
 				</div>
 			</div>
-			<div class="col s12 m3 offset-m1 border_skill">
+			<div class="col s12 m4 l3 offset-l1 border_skill">
 				<div class="col s4 " style="padding:5px 5px 5px 5px;">
 					<img src="images/mysql.jpg" id="image_round" class=" responsive-img" >
 				</div>
-				<div class="col s6 offset-m1" style="padding-top:20px;">
+				<div class="col s6 offset-l1" style="padding-top:20px;">
 					<span class="" id="skill_name">MySql</span>
 				</div>
 			</div>
@@ -286,23 +298,23 @@
 		</div>
 		<div class="row" id="tech_margin">
 		
-			<div class="col s12 m3 border_skill">
+			<div class="col s12 m4 l3 border_skill">
 				<div class="col s4 " style="padding:5px 5px 5px 5px;">
 					<img src="images/php.jpg" id="image_round" class=" responsive-img" >
 				</div>
-				<div class="col s6 offset-m1" style="padding-top:20px;">
+				<div class="col s6 offset-l1" style="padding-top:20px;">
 					<span class="" id="skill_name">PHP</span>
 				</div>
 			</div>
-			<div class="col s12 m3 offset-m1 border_skill">
+			<div class="col s12 m4 l3 offset-l1 border_skill">
 				<div class="col s4 " style="padding:5px 5px 5px 5px;">
 					<img src="images/java.jpg" id="image_round" class=" responsive-img" >
 				</div>
-				<div class="col s6 offset-m1" style="padding-top:20px;">
+				<div class="col s6 offset-l1" style="padding-top:20px;">
 					<span class="" id="skill_name">J2SE,J2EE</span>
 				</div>
 			</div>
-			<div class="col s12 m3 offset-m1 border_skill">
+			<div class="col s12 m4 l3 offset-l1 border_skill">
 				<div class="col s4 " style="padding:5px 5px 5px 5px;">
 					<img src="images/c++.jpg" id="image_round" class=" responsive-img" >
 				</div>
@@ -327,7 +339,7 @@
 	<h2 class="heading_defined center">Internships</h2>
  
 	<div class="col s12 m6">
-		  		  <div class="food">
+		  		  <div class="port_card">
     <div class="cover" style="background-image: url('images/bull.jpg');background-size:100% 100%;">
       <label>
         <i>
@@ -367,7 +379,7 @@
 	
 	
 	<div class="col s12 m6" id="sec_intern">
-		  		  <div class="food">
+		  		  <div class="port_card">
     <div class="cover" style="background-image: url('images/fcut2.jpg')">
       <label>
         <i>
@@ -410,7 +422,7 @@
 	<div id="projects">
 		<h2 class="heading_defined center">Projects</h2>
 		<div class="row">
-			<div class="col s12 m3"  id="proj_marg">
+			<div class="col s12 m4 l3 offset-m1"  id="proj_marg">
 				 <div class="card">
 					<div class="card-image waves-effect waves-block waves-light">
 					  <img class="activator responsive-img card_height" style="height:320px;" src="images/sattvasolar.jpg">
@@ -436,7 +448,7 @@
 					</div>
 				  </div>
 			</div>
-			<div class="col s12 m3 offset-m1">
+			<div class="col s12 m4 l3 offset-l1 offset-m2">
 				<div class="card">
 					<div class="card-image waves-effect waves-block waves-light">
 					  <img class="activator responsive-img" style="height:320px;" src="images/vristam.jpg">
@@ -456,7 +468,7 @@
 					</div>
 				  </div>
 			</div>
-			<div class="col s12 m3  offset-m1">
+			<div class="col s12 m6 l3  offset-l1 offset-m3">
 				<div class="card">
 					<div class="card-image waves-effect waves-block waves-light">
 					  <img class="activator responsive-img" style="height:320px;" src="images/invento.jpg">
@@ -475,7 +487,7 @@
 		</div>
 		
 		<div class="row">
-		<div class="col s12 m3"  id="proj_marg">
+		<div class="col s12 m4 l3 offset-m1"  id="proj_marg">
 			 <div class="card">
 				<div class="card-image waves-effect waves-block waves-light">
 				  <img class="activator responsive-img" style="height:320px;" src="images/fataka.jpg">
@@ -492,7 +504,7 @@
 				</div>
 			  </div>
 		</div>
-		<div class="col s12 m3 offset-m1">
+		<div class="col s12 m4 l3 offset-l1 offset-m2">
 			<div class="card">
 				<div class="card-image waves-effect waves-block waves-light">
 				  <img class="activator responsive-img" style="height:320px;" src="images/wenestor.jpg">
@@ -508,7 +520,7 @@
 				</div>
 			  </div>
 		</div>
-		<div class="col s12 m3  offset-m1">
+		<div class="col s12 m6 l3  offset-l1 offset-m3">
 			<div class="card">
 				<div class="card-image waves-effect waves-block waves-light">
 				  <img class="activator responsive-img" style="height:320px;" src="images/moviebuff.jpg">
@@ -530,7 +542,7 @@
 	
 		
 		<div class="row">
-		<div class="col s12 m3"  id="proj_marg">
+		<div class="col s12 m4 l3 offset-m1"  id="proj_marg">
 			 <div class="card">
 				<div class="card-image waves-effect waves-block waves-light">
 				  <img class="activator responsive-img" style="height:320px;" src="images/content.jpg">
@@ -547,7 +559,7 @@
 				</div>
 			  </div>
 		</div>
-		<div class="col s12 m3 offset-m1">
+		<div class="col s12 m4 l3 offset-l1 offset-m2">
 			<div class="card">
 				<div class="card-image waves-effect waves-block waves-light">
 				  <img class="activator responsive-img" style="height:320px;" src="images/music.jpg">
@@ -563,7 +575,7 @@
 				</div>
 			  </div>
 		</div>
-		<div class="col s12 m3  offset-m1">
+		<div class="col s12 m6 l3  offset-l1 offset-m3">
 			<div class="card">
 				<div class="card-image waves-effect waves-block waves-light">
 				  <img class="activator responsive-img" style="height:320px;" src="images/bharat.jpg">
@@ -627,10 +639,10 @@
 				<ul class="collapsible" data-collapsible="accordion">
 				<li id="other_tab">
 					<div class="collapsible-header "><i class="material-icons">web</i>Web Development (Tech Fest.)<i style="float:right;" class="material-icons right-align">reorder</i></div>
-					<div class="collapsible-header "><i class="material-icons">web</i>Web Dev.(Tech Fest.)<i style="float:right;" class="material-icons right-align">reorder</i></div>
 					
-					<div class="collapsible-body "><p>Member of web development team of Invento(Technical fest of IET DAVV)</p></div>
 					
+					<div class="collapsible-body"><p>Member of web development team of Invento(Technical fest of IET DAVV)</p></div>
+				  
 				 </li>
 				</ul>
 
@@ -657,16 +669,16 @@
 	<!-- Competition -->
 	
 	 <div class="row">
-      <div class="col s12 m5 offset-m1">
-        <div class="card-panel teal center-align">
-			<span class="white-text">
+      <div class="col s12 m5 offset-m1"  id="comp">
+        <div  class="card-panel teal center-align">
+			<span class="white-text" >
 				<h5 class="center-align">INDORE MUN</h5>
 				Participated in INDORE MODEL UNITED NATIONS 2016 as delegate of Greece.
 			</span>
         </div>
       </div>
 	  
-	  <div class="col s12 m5">
+	  <div class="col s12 m5" id="comp">
         <div class="card-panel teal center-align">
 			<span class="white-text">
 				<h5 class="">Navarachanaa</h5>
@@ -677,19 +689,22 @@
     </div>
 	
  </body>
-   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-beta1/jquery.min.js"></script>
-
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-beta1/jquery.min.js"></script>
+ 
   <script src="materialize/js/materialize.min.js"></script>
-  
+  <script src="materialize/js/init.js"></script>
 <script>
-	function a(){
-		window.scroll(0,document.querySelector(this.href).offsetTop - 90);
-/* prevent default action*/
-return false;
+	function closeSideNav(){
+		 $('.button-collapse').sideNav('hide');
 	}
+	
+	
 	function navAppear(){
 	document.getElementById("navinp").classList.remove("navbarinp");
 	document.getElementById("navinp").setAttribute("style", "background-color: #8856A8;");
+	$(".button-collapse").sideNav();
+	
+	
 			
 	}
 </script>
