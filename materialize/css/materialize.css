@@ -1,0 +1,9 @@
+body{
+	font-family:arvo;
+}
+@media(min-width:786px){
+	.header_but_size{
+			font-size:20px;
+	}
+	
+}
