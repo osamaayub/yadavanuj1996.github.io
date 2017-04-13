@@ -2,6 +2,73 @@ body{
 	font-family:arvo;
 	
 }
+.navbarinp{
+			background:transparent;
+			position:absolute;
+			border:transparent;
+			box-shadow: 0 0 0 -0 #999;
+		}
+		#right_nav{
+			padding-right:20px;
+		}
+		.card_height{
+		height:320px;
+		}
+		
+		
+	
+	.heading_defined{
+		padding-bottom:20px;
+		padding-top:40px;
+	}
+	.heading_defined : hover{
+		
+	}	
+		
+	#image_round{
+		width:70px;
+		height:70px;
+	}
+	
+		
+	
+	#other_tab{
+		color:#8856A8;
+	}
+	#contact{
+		background-color:#8856A8;
+	}
+	
+	
+#profile, #internship, #technical_knowledge, #projects {
+    padding-top: 50px;
+    margin-top: -50px;
+}
+
+
+
+@media(min-width:786px){
+	.header_but_size{
+			font-size:20px;
+	}
+	.full-width{
+		width:100%;
+		
+	}
+	#backimg{
+		height:700px;
+	}
+	
+}
+@media(max-width:506px){
+	.heading_defined{
+		padding-bottom:20px;
+		padding-top:40px;
+		font-size:200%;
+	}
+	
+}
+
 
 @media(min-width:600px){
 	.header_but_size{
