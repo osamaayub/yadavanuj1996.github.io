@@ -15,6 +15,10 @@
   --about-subcontent: 20px;
   --text-align-lg-left-sm-center: left;
   --about-content-padding-bottom: 20px;
+  --projects-padding: 20px 20px 20px 20px;	
+  
+
+
 }
 
 @media only screen and (min-width: 721px) and (max-width: 900px){
@@ -34,6 +38,7 @@
     --skills-columns: 5% 90% 5% !important;
     --text-align-lg-left-sm-center: center;
     --about-content-padding-bottom:40px;
+    --projects-padding: 20px 20px 20px 20px;
   }
   .navbar-link{
     display: none; 
@@ -80,6 +85,9 @@
 
 }
 @media only screen and (min-width: 721px) {
+   :root{
+    --projects-padding: 20px 60px 20px 60px;
+   }
   .navbar-link{
     text-decoration: none;
     color: var(--theme-text-color,#4AB19A);
@@ -309,7 +317,7 @@ i:hover{
 }
 #projects{
   margin-top: 50px;
-  padding: 20px 20px 20px 20px;
+  padding: var(--projects-padding,20px 20px 20px 20px);
   background-color: #45567D;
 
 }
